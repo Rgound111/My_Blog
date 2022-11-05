@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My blog /Contact page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <table class="navigation">
+            <td class="burger" id="crossburger" onclick="myfunc()">&#9776;</td> 
+           <tr id="menu">
+                <td><img  class="logo" src="img.jpg" alt=""></td>
+                <td><a href="./index.html">Home</a></td>
+                <td><a href="./about.html">About</a></td>
+                <td><a href="#">Contact</a></td>
+                <td><a href="./Email.html">Email</a></td>
+            </tr>
+         </table>
+    </header>
+
+    <h2 class="heading">Regestration Form</h2>
+                            
+    <div class="cont">
+        
+        <form action="" name="myform" onsubmit="return validateform()" method="dialog">
+           <div id="name">
+            <input type="text" placeholder="Enter your name" name="fname" required>
+            <span class="formerror"></span>
+           </div>
+            <div id="number">
+                <input type="number"  placeholder="Enter your contact number" name="fnum" required>
+            <span class="formerror"></span>
+            </div>
+           <div id="email">
+            <input type="email"  placeholder="Enter your email" name="femail" required>
+            <span class="formerror"></span>
+           </div>
+        <div id="add">
+            <input type="text"  placeholder="Enter your address" name="fadd" >
+            <span class="formerror"></span>
+        </div>
+         
+            <button class="btn" >submit</button>
+        </form>
+    </div>
+
+    <div class="contmain">
+
+    </div>
+
+
+    <footer class="section-footer">
+        <h4>Contact No: 1200 1234 3333  <span><i class="fa-solid fa-phone"></i></span></h4>
+       <h4> &copy www.MyBlog.com  2022-2023</h4></footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/2bfc12b785.js" crossorigin="anonymous"></script>
+</body>
+</html>
